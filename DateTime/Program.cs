@@ -81,11 +81,19 @@ list.Add("dante");
 list.Add("samasquini");
 list.Add("jonas");
 list.Add("abrel");
-list.Sort();
+//list.Sort();
+//list.Reverse();
 list.Insert(0, "Aldebair");
 
-list.Remove("jonas");
-list.RemoveAt(3);
+//list.Remove("jonas");
+//list.RemoveAt(3);
+//list.RemoveRange(0, 2);
+//list.Clear();
+
+//Console.WriteLine(list.Count());
+//Console.WriteLine(list.IndexOf("jonas"));
+
+
 
 foreach(string str in list)
 {

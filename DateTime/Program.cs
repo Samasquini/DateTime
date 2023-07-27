@@ -2,6 +2,7 @@
 
 //Colocando os dados no DateTime.
 using System.ComponentModel;
+using System.Reflection;
 
 DateTime data = DateTime.Today;
 Console.WriteLine(data);
@@ -61,3 +62,32 @@ int difDatas = DateTime.Compare(data, data2);
 int dif = data.CompareTo(data2);
 Console.WriteLine("O resultado é: {0}",difDatas);
 Console.WriteLine("O resultado é: {0}",dif);
+
+//====================================================================================================================================
+//LISTAS
+//====================================================================================================================================
+
+/*double[] notas = new double[3];
+Console.WriteLine("Digite a 1° nota do aluno:");
+notas[0] = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Digite a 2° nota do aluno:");
+notas[1] = Convert.ToInt32(Console.ReadLine());
+notas[2] = (notas[0] + notas[1]) / 2;
+Console.WriteLine($"Nota 1: {notas[0]}\nNota 2: {notas[1]}\nMedia: {notas[2]}");*/
+
+List<string> list = new List<string>();
+list.Add("mulekeNeutro");
+list.Add("dante");
+list.Add("samasquini");
+list.Add("jonas");
+list.Add("abrel");
+list.Sort();
+list.Insert(0, "Aldebair");
+
+list.Remove("jonas");
+list.RemoveAt(3);
+
+foreach(string str in list)
+{
+    Console.WriteLine(str);
+}
